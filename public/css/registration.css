@@ -1,0 +1,277 @@
+@keyframes Slide_right{
+    0%{
+        transform: translateX(-300px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #315696;
+    color: rgb(236, 233, 233);
+}
+.nav{
+margin-bottom: 30px;
+}
+ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+header{
+text-align: center;
+padding: .8em 1.4em;
+display: flex;
+justify-content: space-between;
+background-color: #b0b1b1;
+border-radius: 0 0 15px 15px;
+height: 30%;
+animation: Slide_right .9s ease-in ;
+}
+.hide-mobile{
+display: none;
+}
+.logo{
+font-size: 1.4em;
+margin: 1px;
+color: #fff;
+}
+.logo a{
+    text-decoration: none;
+    color: #fff;font-family: 'roboto', sans-serif;
+}
+.logo a:hover{
+    color: #505252;
+    cursor: pointer;
+}
+.menu{
+width: 25px;
+margin-top: 5%;
+}
+.container{
+width: 100%;
+}
+h4, h2{
+    text-align: center;
+}
+form{
+    width: 90%;
+    margin-left: 20px;
+    animation: Slide_right 1.1s ease-in ;
+}
+fieldset{
+    border-radius: 10px;
+padding-top: 10px;
+margin-top: 5px;
+}
+legend{
+    font-weight: 800;
+}
+label{
+font-size:.8em;
+}
+input:not([type="radio"]),select,textarea, .btn{
+	display: block;
+    border-radius: 4px;
+	border-style: none;
+	width: 90%;
+	padding: 15px;
+	margin-top: 5px;
+}
+select{
+width: 100%;
+}
+textarea{
+    height: 200px;
+}
+.btn{
+    width: 100%;
+background-color: rgb(131, 128, 128);
+color: #fff;
+font-size: 1.1em;
+font-weight: bold;
+margin-bottom: 10px;
+}
+.btn:hover{
+    color: #fff;
+    background-color: #797a7a;
+    cursor: pointer;
+}
+p{
+    text-align: center;
+}
+.goto a{
+font-size:.8em;
+text-decoration: none;
+color: #fff;
+}
+a:hover{
+    color: #e9ecf1;
+    cursor: pointer;
+}
+nav ul{
+position: fixed;
+width: 50%;
+top: 0;
+right: 0;
+text-align: left;
+background: rgb(141, 138, 138);
+height: 100%;
+padding-top: 1em;
+}
+nav ul li a{
+color: #fff;
+text-decoration: none;
+display: block;
+width: 100%;
+padding: 1em 2em;
+background-color: rgba(49, 55, 59); 
+}
+nav ul li a:hover{
+background-color: rgba(65, 73, 78);
+color: #fff;
+cursor: pointer;
+}
+.exit-btn{
+color: #fff;
+margin-bottom: 1em;
+margin-top: 1.3em; 
+text-align: right;
+padding: 0 1.4em;
+}
+/* footer */
+img{
+    width: 10%;
+}
+footer{
+    background-color: #fff;
+    color: black;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 15px 15px 0 0;
+    animation: Slide_right .9s ease-in ;
+}
+.contact, .icons{
+margin-top: -10px;
+}
+.contact:hover{
+cursor: pointer;
+
+}
+.contact li a, footer i{
+    color: #797a7a;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.footer-heading{
+margin-left: -50px;
+}
+
+@media only screen and (min-width: 600px){
+    select, .btn{
+        width: 96%;
+    }
+}
+
+@media only screen and (min-width: 890px){
+    form{
+        width: 60%;
+        margin: 0 auto;
+    }
+    label{
+        font-size: .9em;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        height: 50px;
+    }
+    .logo{
+        font-size: 1.8em;
+    }
+    .heading h2{
+        font-size: 1.9em;
+    }
+    form{
+        width: 50%;
+    }
+    label{
+        font-size: 1em;
+    }
+    #right-footer h4{
+        font-size: 1.5em;
+    }
+    .contact li{
+        font-size: 1.1em;
+    }
+    select, .btn{
+        width: 95%;
+    }
+    .footer-heading{
+        font-size: 1.5em;
+    }
+    .footer-heading a{
+        text-decoration: none;
+        color: black;
+    }
+    .footer-heading a:hover{
+        color: rgb(116, 109, 109);
+    }
+    .contact, .icons{
+        margin-top: -20px;
+    }
+    .icons{
+        font-size: 1.2em;
+    }
+    .contact li a{
+        font-size: .9em;
+        margin-left: -5px;
+    }
+    .contact li a:hover{
+        color: #194694;
+        font-size: .9em;
+    }
+    footer i:hover{
+        color: #194694;
+    }
+    nav ul{
+        width: 30%;
+    }
+    .show-desktop{
+        display: block;
+        margin: 0 auto 13% auto;
+    }
+    .hide-desktop{
+        display: none;
+    }
+    nav ul{
+        position: inherit;
+        width: auto;
+        background: none;
+        height: auto;
+        display: flex;
+        padding-top: 0;
+    }
+    nav ul li{
+        float: left;   
+    } 
+    nav ul li a{
+        color: #fff;
+        background-color: inherit;
+        font-size: 1.2em;
+        padding: .5em 1em;
+    }
+    nav ul li a:hover{
+        background-color: inherit;
+        color: #505252;
+    }
+}

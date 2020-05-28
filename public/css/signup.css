@@ -1,0 +1,345 @@
+@keyframes Slide_right{
+    0%{
+        transform: translateX(-400px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes Slide_left{
+    0%{
+        transform: translateX(400px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #0c3e94;
+    font-family: 'montserrat', sans-serif;
+    color: #0a3888;
+    /* width: 100vw;
+    height: 70vh; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    font-weight: 500;
+
+}
+.nav{
+    margin-bottom: 30px;
+    }
+    ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+    header{
+    text-align: center;
+    padding: .8em 1.4em;
+    display: flex;
+    justify-content: space-between;
+    background-color: #b0b1b1;
+    /* border-radius: 0 0 15px 15px; */
+    height: 30%;
+    animation: Slide_right .9s ease-in;
+    }
+    .hide-mobile{
+    display: none;
+    }
+.logo{
+    font-size: 1.4em;
+    margin: 1px;
+    color: #fff;
+}
+.logo a{
+    text-decoration: none;
+    color: #fff;font-family: 'montserrat', sans-serif;
+}
+.logo a:hover{
+    cursor: pointer;
+    color: #505252;
+}
+.menu{
+    width: 25px;
+    margin-top: 5%;
+    }
+.container{
+    background-color: #b0b1b1;
+    max-width: 90%;
+    border-radius: 10px;
+    /* margin-top: 20px; */
+    margin: 0 auto;
+    padding-top: 20px;
+    animation: Slide_left .9s ease-in ;
+}
+.heading{
+    width: 90%;
+    text-align: center;
+    margin-left: 20px;
+}
+.heading h2{
+    font-size: 1.7em;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 800;
+}
+.heading p{
+    font-size: 1em;
+    margin-top: -10px;
+}
+.form-data{
+ margin-left: 35px;
+}
+label{
+    padding-top: 30px;
+    font-weight: bold;
+}
+input, select, .btn{
+    width: 85%;
+    padding: 15px;
+    border-radius: 4px;
+    border-style: none;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+small{
+    color: red;
+    position: absolute;
+    bottom: 10;
+    visibility: hidden;
+}
+select{
+    width: 93%;
+}
+.btn{
+    width: 93%;
+    background-color: #0a3888;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.btn:hover{
+    color: #fff;
+    background-color: #0f4ebb;
+}
+p{
+    text-align: center;
+    margin-top: -10px;
+    color: black;
+}
+.terms a{
+    text-decoration: none;
+    margin-top: 10px;
+}
+a:hover{
+    color: #0a3888;
+    cursor: pointer;
+}
+nav ul{
+    position: fixed;
+    width: 50%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background: rgb(141, 138, 138);
+    height: 100%;
+    padding-top: 1em;
+    }
+    nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: rgba(49, 55, 59); 
+    }
+    nav ul li a:hover{
+    background-color: rgba(65, 73, 78);
+    color: #fff;
+    cursor: pointer;
+    }
+    .exit-btn{
+    color: #fff;
+    margin-bottom: 1em;
+    margin-top: 1.3em; 
+    text-align: right;
+    padding: 0 1.4em;
+    }
+    /* footer */
+    img{
+        width: 10%;
+    }
+    footer{
+        background-color: #b0b1b1;
+        color: black;
+        padding-bottom: 25px;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 15px 15px 0 0;
+        animation: Slide_right .9s ease-in ;
+        margin-top: 20px;
+    }
+    .contact, .icons{
+    margin-top: -10px;
+    }
+    .contact:hover{
+    cursor: pointer;
+    
+    }
+    .contact li a, footer i{
+        color: #3b3b3b;
+        text-decoration: none;
+        padding: 5px;
+    }
+    
+    .footer-heading{
+    margin-left: -45px;
+    }
+    .footer-heading a{
+        text-decoration: none;
+        color: black;
+        margin-left: 50px;
+    }
+    .footer-heading a:hover{
+        color: rgb(116, 109, 109);
+    }
+    #right-footer h4{
+        font-size: 1.2em;
+        margin-top: 15px;
+    }
+@media only screen and (min-width: 600px){
+    body{
+        overflow-x: hidden;
+    }
+    .container{
+        width: 60%;
+    }
+    .heading h2{
+        font-size: 1.9em;
+    }
+    select{
+        width: 90%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    input{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .btn{
+        width: 90%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+@media only screen and (min-width: 890px){
+select, .btn{
+    width: 89%;
+}
+}
+
+@media only screen and (min-width: 1024px){
+    .container{
+        width: 40%;
+    }
+    .heading p {
+        font-size: 1em;
+    }
+    label{
+        font-size: 1.1em;
+    }
+    select, .btn{
+        width: 80%;
+    }
+    .btn{
+        margin-bottom: 20px;
+    }
+    .heading h2{
+        font-size: 2em;
+    }
+    header{
+        height: 50px;
+    }
+    .logo{
+        font-size: 1.8em;
+    }
+    .heading h2{
+        font-size: 1.9em;
+    }
+    #right-footer h4{
+        font-size: 1.5em;
+    }
+    .contact li{
+        font-size: 1.1em;
+    }
+    select, .btn{
+        width: 90%;
+    }
+    .existing-user a{
+        margin-top: -50px;
+    }
+    .footer-heading{
+        font-size: 1.5em;
+    }
+    .footer-heading a{
+        text-decoration: none;
+        color: black;
+        margin-left: 50px;
+    }
+    .footer-heading a:hover{
+        color: rgb(116, 109, 109);
+    }
+    .contact, .icons{
+        margin-top: -20px;
+    }
+    .icons{
+        font-size: 1.2em;
+    }
+    .contact li a{
+        font-size: .9em;
+        margin-left: -5px;
+    }
+    .contact li a:hover{
+        color: #194694;
+        font-size: .9em;
+    }
+    footer i:hover{
+        color: #194694;
+    }
+    nav ul{
+        width: 30%;
+    }
+    .show-desktop{
+        display: block;
+        margin: 0 auto 13% auto;
+    }
+    .hide-desktop{
+        display: none;
+    }
+    nav ul{
+        position: inherit;
+        width: auto;
+        background: none;
+        height: auto;
+        display: flex;
+        padding-top: 0;
+    }
+    nav ul li{
+        float: left;   
+    } 
+    nav ul li a{
+        color: #fff;
+        background-color: inherit;
+        font-size: 1.2em;
+        padding: .5em 1em;
+    }
+    nav ul li a:hover{
+        background-color: inherit;
+        color: #505252;
+    }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/signup.css">
+    <title>Signup</title>
+</head>
+<body>
+    <div class="nav">
+        <header>
+            <h1 class="logo"> <a href="/"> FOXTROT</a></h1>
+            <nav>
+                <a href="#" class="hide-desktop"><i class="fa fa-2x fa-bars menu" id="menu" aria-hidden="true"></i></a>
+    
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop"><i class="fa  fa-times" aria-hidden="true"></i></li>              
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/signup">Sign up</a></li>
+                    <li><a href="/login">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="container">
+        <div class="heading">
+            <h2>Foxtrot School Finder</h2>
+            <p>Your personal information is confidential and will only be used in case we need to contact you to follow up on the school you profile.</p>
+        </div>
+        <div class="form-data">
+            <form action="/signup" method="POST" id="form">  
+                <div style="background-color:red">
+                    <% if (failure_Message != ''){%>
+                        <h5><%= failure_Message %></h5>
+                    <% } %>
+                </div>
+                <label for="title">Title</label><br>
+                <select name="title" id="title">
+                    <option value="title">Select title</option>
+                    <option value="title">Mr</option>
+                    <option value="title">Mrs</option>
+                    <option value="title">Ms</option>
+                    <option value="title">Dr</option>
+                </select><br>
+                <label for="fullname">Enter Fullname</label><br>
+                <input type="text" name="fullname" id="name" placeholder="Fullname" required><br>
+                
+                <label for="phoneNumber">Contact Number</label><br>
+                <input type="tel" name="phoneNumber" id="phone" placeholder="Phone number"><br>
+                
+                <label for="email">School Email Address</label><br>
+                <input type="email" name="email" id="email" placeholder="Email Address" required><br>
+                <span id="text"></span>
+                
+                <label for="password">Enter Password</label><br>
+                <input type="password" name="password" placeholder="Enter Password" required><br>
+                
+                <label for="adminSecretCode">Admin Secret Code</label><br>
+                <input type="password" name="adminSecretCode" id="adminsecretcode" placeholder="Admin Secret Code"><br>
+                
+                <label for="info">How did you first hear about us?</label><br>
+                <select name="info" id="info">
+                    <option value="info">Please select</option>
+                    <option value="info">Facebook</option>
+                    <option value="info">Twitter</option>
+                    <option value="info">Google</option>
+                    <option value="info">Blog posts</option>
+                    <option value="info">Others</option>
+                </select><br>
+                <button class="btn" id="btn">Signup</button>
+                
+                <p class="terms">By clicking the above button, you have agreed to our <a href="#">terms and conditions</a></p>
+                <br>
+                <p class="existing-user">Already have an account? <a href="/login">Login</a></p> 
+                <br>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div id="footer-container">
+            <h4 class="footer-heading"> <a href="/">FOXTROT</a> </h4>
+            <ul class="contact">
+                <li><a href="#">About Schoolfinder</a></li>
+                <li><a href="#">Meet the Team</a></li>
+                <li><a href="#">Disclaimer</a></li>
+            </ul>
+        </div>
+        <div id="right-footer">
+            <h4>Contact us</h4>
+            <div class="icons">
+                <a href="#"><i class="fa fa-2x fa-facebook-square" aria-hidden="true"></i></a> 
+                <a href="#"><i class="fa fa-2x fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-2x fa-instagram" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/main.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Dashboard</title>
+        <link rel="stylesheet" href="/css/admindashboard.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    </head>
+   <body>
+		<div class="header" id="header">
+            <form action="/admindashboard", method="GET">
+				<input type="search" id="name" name="schoolname" placeholder="school search.....">
+				<button type="submit">Search</button>
+			</form>
+               
+			<div class="logo">
+				<i class="fa fa-tachometer"></i>
+				<span>Brand</span>
+			</div>
+			<a href="#" class="nav-trigger"><span></span></a>
+		</div>
+		<div class="side-nav">
+			<div class="logo">
+				<i class="fa fa-tachometer"></i>
+				<span>Foxtrot</span>
+			</div>
+			<nav>
+				<ul>
+					<li>
+						<a href="#header">
+							<span><i class="fa fa-home" aria-hidden="true"></i></span>
+							<span>Dashboard</span>
+						</a>
+					</li>
+					<li>
+						<a href="#users">
+
+							<span><i class="fa fa-user"></i></span>
+							<span>Users</span>
+						</a>
+					</li>
+					<li>
+						<a href="#analytics">
+							<span><i class="fa fa-bar-chart"></i></span>
+							<span>Analytics</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="main-content">
+			<div class="title" >
+				Analytics  
+                <button type="button" id="btn"><a href="#">Log Out</a></button>
+			</div>
+			<div class='ad'>
+				<div class="close">
+				</div>
+			</div>
+			<div class="main">
+				<div class="widget">
+					<div class="title">Number of Deactivated users</div>
+					<div class="chart"></div>
+				</div>
+				<div class="widget" id="analytics">
+					<div class="title">Number of Active Users
+                    </div>
+                    
+					<div class="chart"><h2>There are currently <span>2</span> active Users</h2></div>
+				</div>
+				<div class="widget">
+					<div class="title" id="users">List of Users</div>
+                    <table id="universities">
+                    <tbody>
+                        <tr>
+                            <th>
+                                School Name
+                            </th>
+                             <th>
+                                Location
+                            </th>
+                             <th>
+                                Website Link
+                            </th>
+                            <th>
+                                Actions
+                            </th>
+                        </tr>
+                        <% showAdminSchools.forEach(function(school){ %>
+                        <tr id="row1">
+                        
+                            <td id="name_row1"><%= school.schoolname %></td>
+                            <td id="state_row1"><%= school.location %></td>
+                            <td id="site_row1"><a href="<%= school.website %>">School Site</a></td>
+                            <td>
+							<input type="button" value="Approve" class="deactivate">
+                            <input type="button" value="Delete" class="delete" onclick="">
+                            </td>
+                        </tr>
+                        <% }) %>
+                    </tbody>
+
+                </table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

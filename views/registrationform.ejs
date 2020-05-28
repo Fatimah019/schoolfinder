@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/registration.css">
+    <title>Registration</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="nav">
+            <header>
+                <h1 class="logo"> <a href="/"> FOXTROT</a></h1>
+                <div style="background-color:red">
+                    <% if (failure_Message != ''){%>
+                        <h5><%= failure_Message %></h5>
+                    <% } %>
+                </div>
+                <div style="background-color:green">
+                    <% if (success_Message != ''){%>
+                        <h5><%= success_Message %></h5>
+                    <% } %>
+                </div>
+                <nav>
+                    <a href="/" class="hide-desktop"><i class="fa fa-2x fa-bars menu" id="menu" aria-hidden="true"></i></a>
+        
+                    <ul class="show-desktop hide-mobile" id="nav">
+                        <li id="exit" class="exit-btn hide-desktop"><i class="fa  fa-times" aria-hidden="true"></i></li>              
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/signup">Sign up</a></li>
+                        <li><a href="/login">Log in</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="heading">
+        <h2>Foxtrot School Finder</h2>
+        </div>
+        <div class="form-data">
+            <h4>Tell us about your school</h4>
+            <form action="/registrationform" method="POST" enctype="multipart/form-data">        
+                <fieldset>
+                    <legend>Basic Information</legend>
+                    
+                    <label for="schoolname">School name:</label><br>
+                    <input type="text" name="schoolname" id="school name" placeholder="Enter name of school" required><br>
+                    
+                    <label for="motto">Motto:</label><br>
+                    <input type="text" name="motto" id="motto" placeholder="Enter motto" required><br>
+                    
+                    <label for="fees">School Fees Range Per Session:</label><br>
+                    <select name="fees" id="fees">
+                        <option value="fees">Select Fee Range</option>
+                        <option value="fees">Below ₦50 000</option>
+                        <option value="fees">₦50 000 - ₦200 000</option>
+                        <option value="fees">₦201 000 - ₦600 000</option>
+                        <option value="fees">₦601 000 - ₦1 000 000</option>
+                        <option value="fees">₦1 000 000 Above</option>
+                    </select><br>  
+                </fieldset><br>
+                
+                <fieldset>
+                    <legend>Contact Info</legend>
+                    <label for="address">Your School Address</label><br>
+                    <input type="text" name="address" id="address" placeholder="school address" required><br>
+                    
+                    <label for="location">Your School Location</label><br>
+                    <input type="text" name="location" id="location" placeholder="School Location"><br>
+                    
+                    <label for="state">State:</label>
+                    <input type="text" name="state" id="state" placeholder="Enter state" required><br>
+                    
+                    <label for="email">School Email Address</label><br>
+                    <input type="email" name="email" id="email" placeholder="Enter Email Address" required><br>
+                    
+                    <label for="website">School Website Link</label><br>
+                    <input type="text" name="website" id="website" placeholder="Enter School Website" required><br>
+                    
+                    <label for="phone">School Telephone Number</label><br>
+                    <input type="tel" name="phone" id="phone" placeholder="080xxxxxxx" required>
+                </fieldset><br>
+
+                <label for="image">School Image</label><br>
+                <input type="file" name="image" accept='image/*' id="image" value=" " required>
+            
+                
+                <fieldset>
+                    <legend>Other Information</legend>
+                    <label for="courses">Courses Offered</label><br>
+                    <input type="text" name="courses" id="courses" placeholder="List out courses that are offered"><br>
+                    
+                    <label for="profile">School Profile:</label><br>
+                    <textarea name="profile" id="">
+                        What is that great thing about your school?
+                    </textarea><br>
+                    
+                    <button class="btn">Submit</button>
+                </fieldset>
+                <p class="goto"><a href="#">Got to school profile</a></p>
+            </form>
+        </div>
+<!-- Footer Section -->
+        <footer>
+            <div id="footer-container">
+                <h4 class="footer-heading"> <a href="index.html">FOXTROT</a> </h4>
+                <ul class="contact">
+                    <li><a href="#">About Schoolfinder</a></li>
+                    <li><a href="#">Meet the Team</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                </ul>
+            </div>
+            <div id="right-footer">
+                <h4>Contact us</h4>
+                <div class="icons">
+                    <a href="#"><i class="fa fa-2x fa-facebook-square" aria-hidden="true"></i></a> 
+                    <a href="#"><i class="fa fa-2x fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-2x fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+</html>

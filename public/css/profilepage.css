@@ -1,0 +1,377 @@
+@keyframes Slide_right{
+    0%{
+        transform: translateX(-400px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes Slide_left{
+    0%{
+        transform: translateX(400px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat', sans-serif;
+    overflow-x: hidden;
+}
+.nav{
+    margin-bottom: 30px;
+    }
+    ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+    header{
+    text-align: center;
+    padding: .8em 1.4em;
+    display: flex;
+    justify-content: space-between;
+    background-color: #b0b1b1;
+    /* border-radius: 0 0 15px 15px; */
+    height: 30%;
+    animation: Slide_right .9s ease-in;
+    }
+    .hide-mobile{
+    display: none;
+    }
+.logo{
+    font-size: 1.4em;
+    margin: 1px;
+    color: #fff;
+}
+.logo a{
+    text-decoration: none;
+    color: #fff;font-family: 'montserrat', sans-serif;
+}
+.logo a:hover{
+    cursor: pointer;
+    color: #505252;
+}
+.menu{
+    width: 25px;
+    margin-top: 5%;
+    color: #fff;
+    }
+img{
+    width: 100%;
+}
+nav ul{
+    position: fixed;
+    width: 50%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background: rgb(141, 138, 138);
+    height: 100%;
+    padding-top: 1em;
+    }
+    nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: rgba(49, 55, 59); 
+    }
+    nav ul li a:hover{
+    background-color: rgba(65, 73, 78);
+    color: #fff;
+    cursor: pointer;
+    }
+    .exit-btn{
+    color: #fff;
+    margin-bottom: 1em;
+    margin-top: 1.3em; 
+    text-align: right;
+    padding: 0 1.4em;
+    }
+
+    .hover-table-layout {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+           -webkit-flex-wrap: wrap;
+          -moz-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+        max-width:800px;
+        margin:0 auto;
+        margin-top: 20px;
+    animation: Slide_left .9s ease-in;
+
+      }
+      #title {
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 10px;
+        margin-left: 130px;
+        border-color: #3f59ec;
+    }
+      .listing-item {
+        display: block;
+        width:100%;
+         margin-bottom:20px;
+         float: left;
+         background: #fff;
+         border-radius:10px;
+         /* z-index:0; */
+         cursor:pointer;
+         -webkit-transition: all 0.3s ease;
+         -moz-transition: all 0.3s ease;
+         transition: all 0.3s ease;
+             -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.10);
+         -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.10);
+         box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.10);
+     
+     }
+     .listing-item:hover,  .listing-item.active{
+        -webkit-transform: scale(1.03);
+        -moz-transform: scale(1.03);
+        transform: scale(1.03);
+            -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        z-index:2;
+    
+    }
+    .listing-item .listing{
+        padding:20px;
+        position:relative;  
+    }
+    .listing-item .listing:before{
+        content:"";
+        position:absolute;
+        top:-15px;
+        left:-o-calc(50% - 15px);
+        left:-moz-calc(50% - 15px);
+        left:-webkit-calc(50% - 15px);
+        left:calc(50% - 15px);
+        border-bottom:20px solid #fff;
+        border-left:20px solid transparent;
+        border-right:20px solid transparent;
+    }
+        figure.image img {
+            width:100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    /* figure.image figcaption {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        text-align: center;
+        bottom: 4px;
+        background: rgba(0,0,0,0.6);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    
+    } */
+    /* figcaption .caption{
+        position:relative;
+        top:50%;
+        -moz-transform:translateY(-50%);
+        -webkit-transform:translateY(-50%);
+        transform:translateY(-50%);
+    
+    } */
+    figcaption h1{
+        color:rgb(43, 108, 230);
+        font-weight:bold;
+        font-size:1.2em;
+        text-align: center;
+      text-transform: uppercase;
+    }
+    figcaption p{
+      color:white;
+      font-size:12px;
+    }
+    .listing h4 {
+       
+        font-size: 1em;
+        text-align: center;
+        padding: 5px 10px;
+        font-weight: bold;
+    }
+    .listing h4:not(:last-child){
+        border-bottom: 1px solid #ccc;
+     }
+    
+     button {
+         padding: 6px;
+         border-radius: 7px;
+         border-style: none;
+         width: 30%;
+         background-color: rgb(14, 98, 207);
+         font-size: 1em;
+         font-weight: bold;
+         color: #fff;
+         margin-left: 130px;
+         cursor: pointer;
+     }
+     
+     /* button:hover,#unilag:hover,
+     #uniben:hover, #babcock:hover {
+         background-color: black;
+     } */
+     
+     /* #unilag, #uniben, #babcock {
+         width: 20%;
+         background-color: green;
+         font-size: 1em;
+         font-weight: bold;
+         color: #fff;
+     } */
+     a{
+        text-decoration: none;
+    }
+    footer{
+        background-color: #b0b1b1;
+        color: black;
+        padding-bottom: 25px;
+        display: flex;
+        justify-content: space-around;
+        /* border-radius: 15px 15px 0 0; */
+        animation: Slide_right .9s ease-in ;
+        margin-top: 20px;
+    }
+    .contact, .icons{
+    margin-top: -10px;
+    }
+    .contact:hover{
+    cursor: pointer;
+    
+    }
+    .contact li a, footer i{
+        color: #3b3b3b;
+        text-decoration: none;
+        padding: 5px;
+    }
+    
+    .footer-heading{
+    margin-left: -45px;
+    }
+    .footer-heading a{
+        text-decoration: none;
+        color: black;
+        margin-left: 50px;
+    }
+    .footer-heading a:hover{
+        color: rgb(116, 109, 109);
+    }
+    #right-footer h4{
+        font-size: 1.2em;
+        margin-top: 15px;
+    }
+    @media only screen and (min-width:540px){
+        #title {
+            padding: 15px;
+            margin: 20px 30%;
+            border-radius: 15px;
+        }
+        button{
+            margin-left: 190px;
+        }
+    }
+    @media only screen and (min-width:750px){
+        button{
+            margin-left: 250px;
+        }
+    }
+    @media only screen and (min-width:1024px){
+        #title{
+            margin-left: 40%;
+            text-align: center;
+            color:white;
+            font-size:1.5em;
+            text-transform: uppercase;
+            margin-top: 30px;
+        }
+        figcaption h1{
+            font-size: 1.5em;
+        }
+        button{
+            margin-left: 280px;
+            padding: 10px;
+            font-size: 1.5em;
+        }
+        nav ul{
+            width: 30%;
+        }
+        .show-desktop{
+            display: block;
+            margin: 0 auto 13% auto;
+        }
+        .hide-desktop{
+            display: none;
+        }
+        nav ul{
+            position: inherit;
+            width: auto;
+            background: none;
+            height: auto;
+            display: flex;
+            padding-top: 0;
+        }
+        nav ul li{
+            float: left;   
+        } 
+        nav ul li a{
+            color: #fff;
+            background-color: inherit;
+            font-size: 1.2em;
+            padding: .5em 1em;
+        }
+        nav ul li a:hover{
+            background-color: inherit;
+            color: #505252;
+        }
+        #right-footer h4{
+            font-size: 1.5em;
+        }
+        .contact li{
+            font-size: 1.1em;
+        }
+        select, .btn{
+            width: 90%;
+        }
+        .existing-user a{
+            margin-top: -50px;
+        }
+        .footer-heading{
+            font-size: 1.5em;
+        }
+        .footer-heading a{
+            text-decoration: none;
+            color: black;
+            margin-left: 50px;
+        }
+        .footer-heading a:hover{
+            color: rgb(116, 109, 109);
+        }
+        .contact, .icons{
+            margin-top: -20px;
+        }
+        .icons{
+            font-size: 1.2em;
+        }
+        .contact li a{
+            font-size: .9em;
+            margin-left: -5px;
+        }
+        .contact li a:hover{
+            color: #194694;
+            font-size: .9em;
+        }
+        footer i:hover{
+            color: #194694;
+        }
+    }

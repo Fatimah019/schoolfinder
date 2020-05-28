@@ -1,0 +1,292 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Montserrat, sans-serif;
+}
+
+/* Header Start*/
+
+header{
+    display: flex;
+    background-color: #0a3888;
+}
+
+#logo{
+    margin: 20px auto 20px 20px;
+}
+
+nav{
+    margin: 20px 20px 20px auto;
+}
+
+nav li{
+    display: inline;
+    margin: 0 30px;
+    font-size: 1.25em;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(207, 203, 203);
+}
+
+/* Header End*/
+
+/* Search Section Start*/
+
+#search_schools{
+    margin: 3em auto;
+    text-align: center;
+}
+
+#search_schools h3{
+    margin: 1em auto 2em;
+    font-size: 1.5em;
+}
+
+input{
+    border: 0 solid #0a3888;
+    font-size: 100%;
+    background-color: #edf2f7;
+    color: #0a3888 ;
+    padding: 1rem;
+    width: 50%;
+    border-radius: 5px;
+    margin: 0 1%;
+}
+
+button{
+    background-color: #0a56da;
+    color: #fff;
+    padding: 1rem 7rem;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 0 solid #e2e8f0;
+    width: 20%;
+}
+
+/* Search Section End*/
+
+/* Results Section Start*/
+.result{
+    position: relative;
+}
+
+#results h3{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#layout_results{
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 60vw;
+}
+
+#layout_results div{
+    background-color: aliceblue;
+}
+
+#results h4{
+    text-align: center;
+    margin: 1em;
+}
+
+#results img{
+    float: left;
+    margin: .5em;
+}
+
+#results p{
+    margin-top: 1.5em;
+    padding: .5em;
+}
+
+.result a{
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    text-decoration: none;
+    font-size: large;
+    color: #0a56da;
+}
+
+/* Results Section End*/
+
+/* Footer Start*/
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(207, 203, 203);
+}
+
+#left_footer{
+    margin-right: 6em;
+}
+#right_footer{
+    margin-left: 6em;
+}
+
+footer h4{
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: .5em;
+}
+
+footer img{
+    height: 40px;
+    width: 40px;
+}
+
+footer li{
+    list-style: none;
+    font-size: 1.15em;
+}
+
+#right_footer li{
+    display: inline;
+    padding: 1em;
+}
+
+#left_footer li{
+    padding: .15em 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* Footer End*/
+
+/* Media Queries*/
+@media only screen and (max-width: 720px) {
+    /* Header Start*/
+#logo{
+    margin: 10px auto 10px 10px;
+}
+
+nav{
+    margin: 10px 10px 10px auto;
+}
+
+nav li{
+    font-size: 1em;
+    margin: 0 10px;
+}
+
+/* Header End*/
+
+/* Search Section Start*/
+
+button{
+    padding: 1rem 2rem;
+}
+
+/* Search Section End*/
+
+/* Footer Start*/
+#left_footer{
+    margin-right: 2em;
+}
+#right_footer{
+    margin-left: 2em;
+}
+
+footer h4{
+    font-size: 1.2em;
+    margin-bottom: .15em;
+}
+
+#right_footer li{
+    padding: .5em;
+}
+
+/* Footer End*/
+}
+
+@media only screen and (max-width: 540px){
+    /* Header Start*/
+nav li{
+    margin: 0 10px;
+    font-size: .65em;
+}
+/* Header End*/
+
+/* Search Section Start*/
+
+#search_schools{
+    margin: 2em auto;
+}
+
+#search_schools h3{
+    margin: 1em auto 1em;
+    font-size: 1em;
+}
+
+button{
+    padding: 1rem 0.75rem;
+}
+
+/* Search Section End*/
+
+/* Results Section Start*/
+#results h3{
+    font-size: 1.2em;
+}
+
+#results img{
+    float: none;
+}
+
+#results p{
+    margin-top: .1em;
+    margin-bottom: 1.5em;
+}
+
+.result a{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: smaller;
+    clear: left;
+}
+
+/* Results Section End*/
+
+
+/* Footer Start*/
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(207, 203, 203);
+}
+
+#left_footer{
+    margin-right: 1em;
+}
+#right_footer{
+    margin-left: 1em;
+}
+
+footer h4{
+    font-size: 1em;
+    margin-bottom: .1em;
+}
+
+footer img{
+    height: 20px;
+    width: 20px;
+}
+
+footer li{
+    font-size: .95em;
+}
+/* Footer End*/
+}

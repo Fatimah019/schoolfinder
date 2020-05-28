@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Finder | Home Page</title>
+    <meta name="description" content="School Finder is a web based application which helps students (aspiring undergraduates and postgraduates) to find information about institution of their choice.">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo"> <a href="/"> FOXTROT</a></h1>
+        <nav>
+            <a href="#" class="hide-desktop"><i class="fa fa-2x fa-bars menu" id="menu" aria-hidden="true"></i></a>
+    
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop"><i class="fa  fa-times" aria-hidden="true"></i></li>              
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/signup">Sign up</a></li>
+                    <li><a href="/login">Login</a></li>
+                </ul>
+        </nav>
+    </header>
+    <section id="banner">
+        <div id="one">
+            <h1>Find your dream school</h1>
+            <p>Foxtrot school finder is a web based application which helps students (aspiring undergraduates and postgraduates) to find information about institution of their choice.</p>
+        </div>
+        <div id="two"> </div>
+    </section>
+    <section id="search-schools">
+        <h3>Search for school by location or course</h3>
+        <form action="/schoollist", method="GET">
+            <input type="search" name="search" id="search" placeholder="Search for a school near you">
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <section id="popular">
+        <div id="most_popular">
+            <h3>Most Popular Schools</h3>
+            <div id="layout_popular">
+                <div id="one_popular">
+                    <h4>Babcock-University</h4>
+                    <img src="images/Babcock-University.jpg" alt="school image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <button>Find out more</button>
+                </div>
+                <div id="one_popular">
+                    <h4>University of Benin</h4>
+                    <img src="images/uniben.jpeg" alt="school image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <button>Find out more</button>
+                </div>
+                <div id="one_popular">
+                    <h4>University of Lagos</h4>
+                    <img src="images/Babcock-University.jpg" alt="school image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <button>Find out more</button>
+                </div>
+                <div id="one_popular">
+                    <h4>Babcock-University</h4>
+                    <img src="images/Babcock-University.jpg" alt="school image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <button>Find out more</button>
+                </div>
+                <div id="one_popular">
+                    <h4>University of Lagos</h4>
+                    <img src="images/Babcock-University.jpg" alt="school image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <button>Find out more</button>
+                </div>
+                <div id="one_popular">
+                    <h4>University of Benin</h4>
+                    <img src="images/uniben.jpeg" alt="school image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <button>Find out more</button>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <div id="footer-container">
+            <h4 class="footer-heading"> <a href="/">FOXTROT</a> </h4>
+            <ul class="contact">
+                <li><a href="#">About Schoolfinder</a></li>
+                <li><a href="#">Meet the Team</a></li>
+                <li><a href="#">Disclaimer</a></li>
+            </ul>
+        </div>
+        <div id="right-footer">
+            <h4>Contact us</h4>
+            <div class="icons">
+                <a href="#"><i class="fa fa-2x fa-facebook-square" aria-hidden="true"></i></a> 
+                <a href="#"><i class="fa fa-2x fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-2x fa-instagram" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+    <button id="top"><a href="#banner">Top</a></button>
+    <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="nav">
+        <header>
+            <h1 class="logo"> <a href="/"> FOXTROT</a></h1>
+            <nav>
+                <a href="#" class="hide-desktop"><i class="fa fa-2x fa-bars menu" id="menu" aria-hidden="true"></i></a>
+    
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop"><i class="fa  fa-times" aria-hidden="true"></i></li>              
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/signup">Sign up</a></li>
+                    <li><a href="/login">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="container">      
+            <form action="/login" method="POST">
+                <h3>Login to your account below</h3> 
+                <div style="background-color:red">
+                    <% if (failure_Message != ''){%>
+                        <h5><%= failure_Message %></h5>
+                    <% } %>
+                </div>
+                <div style="background-color:green">
+                    <% if (success_Message != ''){%>
+                    <h5><%= success_Message %></h5>
+                    <% } %>
+                </div> 
+               <div>
+                <span>
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                   </span>
+                   <input type="email" name="email" placeholder="Email Address" required>
+               </div>
+               
+               <br>
+               <div>
+                <span><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
+                <input type="password" name="password" placeholder="Password" required><br>
+
+               </div>
+               
+               <button class="btn">Login</button>
+               <p><a href="#">Forgot password?</a></p>
+           </form>
+    </div>
+
+   <!-- Footer Section -->
+   <!-- <footer>
+    <div id="footer-container">
+        <h4 class="footer-heading"> <a href="index.html">FOXTROT</a> </h4>
+        <ul class="contact">
+            <li><a href="#">About Schoolfinder</a></li>
+            <li><a href="#">Meet the Team</a></li>
+            <li><a href="#">Disclaimer</a></li>
+        </ul>
+    </div>
+    <div id="right-footer">
+        <h4>Contact us</h4>
+        <div class="icons">
+            <a href="#"><i class="fa fa-2x fa-facebook-square" aria-hidden="true"></i></a> 
+            <a href="#"><i class="fa fa-2x fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-2x fa-instagram" aria-hidden="true"></i></a>
+        </div>
+    </div>
+</footer> -->
+<script src="/js/main.js"></script>
+</body>
+</html>
