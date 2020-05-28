@@ -90,7 +90,7 @@ app.get('/', (req, res)=>{
 })
 var port=process.env.PORT || 8080;
 app.listen(port, ()=>{
-    console.log("app running on port 8080")
+    console.log(`app running on port ${port}`)
 });
 
 
